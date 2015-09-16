@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Main
+namespace Main.Formularios.Endereco
 {
-    public partial class Form1 : Form
+    public partial class Lista : Form
     {
-        public Form1()
+        public Lista()
         {
             InitializeComponent();
         }

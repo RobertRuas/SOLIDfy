@@ -44,14 +44,98 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Endereco\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Marca\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Modelo\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Endereco\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Endereco\Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Endereco\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Marca\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Marca\Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Marca\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Modelo\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Modelo\Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Modelo\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +158,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
