@@ -83,6 +83,24 @@
     <Compile Include="Formularios\Endereco\Novo.Designer.cs">
       <DependentUpon>Novo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estoque\Item\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Item\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Item\Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Item\Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Item\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estoque\Item\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estoque\Marca\Editar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +137,30 @@
     <Compile Include="Formularios\Estoque\Modelo\Novo.Designer.cs">
       <DependentUpon>Novo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Fornecedor\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fornecedor\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fornecedor\Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fornecedor\Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fornecedor\Novo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fornecedor\Novo.Designer.cs">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MODELO_LEYOUT_PADRAO\modeloLISTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MODELO_LEYOUT_PADRAO\modeloLISTA.Designer.cs">
+      <DependentUpon>modeloLISTA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formMain.resx">
@@ -131,6 +173,15 @@
       <DependentUpon>Lista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Endereco\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Item\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Item\Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estoque\Item\Novo.resx">
       <DependentUpon>Novo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estoque\Marca\Editar.resx">
@@ -150,6 +201,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estoque\Modelo\Novo.resx">
       <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fornecedor\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fornecedor\Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fornecedor\Novo.resx">
+      <DependentUpon>Novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MODELO_LEYOUT_PADRAO\modeloLISTA.resx">
+      <DependentUpon>modeloLISTA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -189,6 +252,26 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Vbe.Interop.Forms">
+      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

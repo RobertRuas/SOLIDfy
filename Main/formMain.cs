@@ -17,32 +17,15 @@ namespace Main
             InitializeComponent();
         }
 
-        private void listaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void formMain_Load(object sender, EventArgs e)
         {
-            Formularios.Estoque.Marca.Lista frmSHOW = new Formularios.Estoque.Marca.Lista();
-            frmSHOW.MdiParent = this;
-            frmSHOW.Show();
-        }
+            DialogResult result = MessageBox.Show(
+                   "É recomendado que seja alterado o modo de exibição desta janela para 'Maximizado' para melhor experiência. \n\nDeseja aplicar recomendações?", "SOLIDfy", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Formularios.Estoque.Marca.Novo frmSHOW = new Formularios.Estoque.Marca.Novo();
-            frmSHOW.MdiParent = this;
-            frmSHOW.Show();
-        }
-
-        private void listaToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Formularios.Estoque.Modelo.Lista frmSHOW = new Formularios.Estoque.Modelo.Lista();
-            frmSHOW.MdiParent = this;
-            frmSHOW.Show();
-        }
-
-        private void novoToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Formularios.Estoque.Modelo.Novo frmSHOW = new Formularios.Estoque.Modelo.Novo();
-            frmSHOW.MdiParent = this;
-            frmSHOW.Show();
+            if(result == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
         }
 
         private void listaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -55,6 +38,62 @@ namespace Main
         private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Formularios.Endereco.Novo frmSHOW = new Formularios.Endereco.Novo();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void listaToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Formularios.Fornecedor.Lista frmSHOW = new Formularios.Fornecedor.Lista();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void novoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Formularios.Fornecedor.Novo frmSHOW = new Formularios.Fornecedor.Novo();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void listaToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Marca.Lista frmSHOW = new Formularios.Estoque.Marca.Lista();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void novoToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Marca.Novo frmSHOW = new Formularios.Estoque.Marca.Novo();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void listaToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Modelo.Lista frmSHOW = new Formularios.Estoque.Modelo.Lista();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void novoToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Modelo.Novo frmSHOW = new Formularios.Estoque.Modelo.Novo();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void listaToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Item.Lista frmSHOW = new Formularios.Estoque.Item.Lista();
+            frmSHOW.MdiParent = this;
+            frmSHOW.Show();
+        }
+
+        private void itemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formularios.Estoque.Item.Novo frmSHOW = new Formularios.Estoque.Item.Novo();
             frmSHOW.MdiParent = this;
             frmSHOW.Show();
         }

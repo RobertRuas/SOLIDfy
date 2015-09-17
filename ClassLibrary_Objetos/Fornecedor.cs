@@ -25,7 +25,6 @@ namespace ClassLibrary_Objetos
         private string representanteEmail;
 
         private string obsevacoes;
-        private string status;
 
         public string Nome_fantasia
         {
@@ -115,12 +114,6 @@ namespace ClassLibrary_Objetos
         {
             get { return obsevacoes; }
             set { obsevacoes = value; }
-        }
-
-        public string Status
-        {
-            get { return status; }
-            set { status = value; }
         }
     }
 }
