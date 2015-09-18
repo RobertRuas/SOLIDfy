@@ -97,5 +97,11 @@ namespace Main
             frmSHOW.MdiParent = this;
             frmSHOW.Show();
         }
+
+        private void barraDeFerramntasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formularios.Configuracoes.BarraFerramentasMain frmSHOW = new Formularios.Configuracoes.BarraFerramentasMain(this);
+            frmSHOW.Show();
+        }
     }
 }
